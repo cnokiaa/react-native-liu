@@ -1,0 +1,27 @@
+{
+  "name": "itryProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-android": "react-native bundle –platform android –dev false –entry-file index.android.js –bundle-output android/app/src/main/assets/index.android.bundle –sourcemap-output android/app/src/main/assets/index.android.map –assets-dest android/app/src/main/res/",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@remobile/react-native-splashscreen": "^1.0.4",
+    "react": "~15.3.1",
+    "react-native": "0.37.0",
+    "react-native-image-picker": "^0.23.0",
+    "react-native-splash-screen": "^1.0.9"
+  },
+  "devDependencies": {
+    "babel-jest": "17.0.2",
+    "babel-preset-react-native": "1.9.0",
+    "jest": "17.0.3",
+    "jest-react-native": "17.0.3",
+    "react-test-renderer": "~15.3.1"
+  },
+  "jest": {
+    "preset": "jest-react-native"
+  }
+}
